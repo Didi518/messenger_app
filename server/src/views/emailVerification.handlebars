@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirmez votre Email</title>
+    <style>
+
+      *{ text-decoration: none; } .container{ margin: 0 auto; max-width: 500px;
+      width: 100%; } .btn-link{ display: inline-block; padding: 10px 20px;
+      background-color: #007bff; color: #fff !important; text-decoration: none;
+      border-radius: 5px; } img{ width: 30px; border-radius: 50%;}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="https://avatars.githubusercontent.com/u/19819005?v=4" alt="logo" />
+      <h2 class="color-primary">{{subject}}</h2>
+      <hr />
+      <p>Bonjour
+        {{name}},
+      </p>
+      <p>Cliquez sur le lien ci-dessous afin de vérifier votre compte.<br />Ce lien sera valide 24 heures.</p>
+
+      <a href={{link}} class="btn-link">Vérifier le Compte</a>
+
+      <p style="margin-bottom: 50px;">
+        Si vous n'avez pas créé de compte, merci d'ignorer ce mail.
+      </p>
+
+      <hr />
+      <p>Merci,</p>
+      <p>L'équipe <b>AuthKit</b></p>
+      <div>
+        <p style="font-size: 0.8rem;">
+          Si vous n'arrivez pas à cliquer sur le bouton "Verifier le Compte", merci de copier et de coller l'URL ci-dessous dans votre navigateur:
+          <br />
+          <a href={{link}}>{{link}}</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

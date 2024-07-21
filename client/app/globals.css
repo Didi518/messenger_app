@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  height: 100vh;
+  font-size: 14px;
+  background: url("../public/glass-bg.png") no-repeat center center fixed;
+}
+
+.dark body {
+  color: #f9f9f9;
+  background: url("../public/bg--blur-purple.png") no-repeat center fixed;
+}
+
+.auth-page {
+  height: 100vh;
+  background: url("../public/glass-bg.png") no-repeat center center fixed;
+}
+
+.auth-form {
+  position: relative;
+  box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.auth-form > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0.12;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.forgot-password-form,
+.register-form,
+.login-form {
+  position: relative;
+  box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.forgot-password-form,
+.register-form,
+.login-form > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0.12;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.active-nav {
+  color: #7263f3;
+}
+
+.textarea {
+  max-height: 350px;
+  overflow-y: auto;
+  resize: none;
+}
+
+.textarea::-webkit-scrollbar {
+  width: 5px;
+}
+
+.textarea::-webkit-scrollbar-thumb {
+  background-color: #7263f3;
+  border-radius: 6px;
+}
+
+.message-body {
+  height: calc(100% - 152px);
+  overflow-y: auto;
+  resize: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.message-body::-webkit-scrollbar {
+  width: 5px;
+}
+
+.message-body::-webkit-scrollbar-thumb {
+  background-color: #7263f3;
+  border-radius: 6px;
+}
